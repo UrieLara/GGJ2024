@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/creditos.unity
     guid: 09a282d3c9f8b5146b9c207c431378fb
+  - enabled: 1
+    path: Assets/Scenes/Victoria.unity
+    guid: 66fa71d01296b7e43bb562c5ee2f925c
+  - enabled: 1
+    path: Assets/Scenes/Derrota.unity
+    guid: 963c96512b20c8445a107c88687be345
   m_configObjects: {}
