@@ -1471,15 +1471,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1092066339}
   m_SourcePrefab: {fileID: 100100000, guid: 6542f74241d6bf54f86267791d3f0168, type: 3}
-<<<<<<< Updated upstream
---- !u!1 &1092066338 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5089459050642376889, guid: 6542f74241d6bf54f86267791d3f0168, type: 3}
-  m_PrefabInstance: {fileID: 1092066337}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1092066339
-MonoBehaviour:
-=======
 --- !u!4 &1183661932 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1f4888b3d9164744e9313672070b929c, type: 3}
@@ -1487,19 +1478,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1183661935
 AudioSource:
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-  m_GameObject: {fileID: 1092066338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f70497d4706ff34b873a5e5508ef627, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-=======
   m_GameObject: {fileID: 581177285}
   m_Enabled: 0
   serializedVersion: 4
@@ -1680,7 +1662,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4581875345927829614, guid: aa8973f4291cc294ea08ae38e19df6d1, type: 3}
   m_PrefabInstance: {fileID: 1476681044}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1001 &1476681044
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -363,13 +363,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
-  m_AnchoredPosition: {x: 23.3411, y: 34.5607}
-  m_SizeDelta: {x: 541.0103, y: 220.5051}
-=======
   m_AnchoredPosition: {x: 77.6, y: -30.1}
   m_SizeDelta: {x: 410.4, y: 236}
->>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1448300143
 MonoBehaviour:
@@ -392,15 +387,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-<<<<<<< Updated upstream
-    m_Font: {fileID: 12800000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
-    m_FontSize: 31
-    m_FontStyle: 0
-=======
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 1
->>>>>>> Stashed changes
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 46
@@ -410,14 +399,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-<<<<<<< Updated upstream
-  m_Text: "\uFE0FGame Design: Aixa\nM\xFAsica: Roc\xEDo y Alejo\nProgramaci\xF3n:
-    Uriel\nArte 2D: Isis\nArte 3D: Isis y Santiago"
-=======
   m_Text: "Environment 3d: Santiago galarza\nCharacter 3d: isis tinti, Sergio Pinzon,
     Juliana Lopez \nArte Tecnico: Isis Tinti\nProgramacion : uriel lara\nAudio :Alejo
     Schenone, Rocio Polo \nGame Design: Aixa Torres (AiiMii)\n"
->>>>>>> Stashed changes
 --- !u!222 &1448300144
 CanvasRenderer:
   m_ObjectHideFlags: 0
