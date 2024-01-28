@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+public class Credits : MonoBehaviour
 {
- 
-    
-    public void EscenaJuego()
+  
+    public void EscenaCredits()
     {
-      
-        SceneManager.LoadScene("juego");
+
+        SceneManager.LoadScene("creditos");
     }
 
-    
+
 }
