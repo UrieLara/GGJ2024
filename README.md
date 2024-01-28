@@ -1,1 +1,1 @@
-# GGJ2024
+# Fight-Laugh_GGJ

@@ -20,6 +20,8 @@ public class Dialog : MonoBehaviour
 
     Coroutine auxCorutine;
 
+    int veces = 0;
+
     public void AbrirCajaDialogo(int valor)
     {
         if (isDialogActive)
@@ -94,29 +96,27 @@ public class Dialog : MonoBehaviour
         }
 
         txtDialogo.text = "";
-        panel.SetActive(false);
+       // panel.SetActive(false);
     }
 
     private void Start()
     {
-        panel.SetActive(false);
+        chistes.SetActive(false);
 
     }
     private void Update()
     {
-     //   txtDialogoEnemigo.gameObject.SetActive(false);
+        //   txtDialogoEnemigo.gameObject.SetActive(false);
 
-        int veces = 0;
-        if(Input.GetKeyDown(KeyCode.A))
+        AbrirCajaDialogo(0);
+        if (Input.GetKeyDown(KeyCode.A) && !isDialogActive)
         {
             veces++;
         }
 
         switch (veces) {
             case 0:
-
                 AbrirCajaDialogo(0);
-              //  txtDialogo.gameObject;
                 break;
             case 1:
                 AbrirCajaDialogo(1);
