@@ -1,0 +1,4 @@
+repository "The Fight of Laugh 3D@Lurc305@cloud"
+  path "/"
+    br "/main"
+    co "/main"
