@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ContarChiste : MonoBehaviour
@@ -19,33 +20,11 @@ public class ContarChiste : MonoBehaviour
     private int seleccion = 0;
     private int[] contador = new int[3];
 
+    public string victoria = "";
+
     private void Update()
     {
-        //textoEnemigo.text = "";
-        
-
-        //Button botonSeleccionado = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
-
-        //if (botonSeleccionado == boton1)
-        //{
-        //    textoJugador.text = "Chiste 1";
-        //    seleccion = 1;
-            
-        //}
-        //else if (botonSeleccionado == boton2)
-        //{
-        //    textoJugador.text = "Chiste 2";
-        //    seleccion = 2;
-            
-
-
-        //}
-        //else if (botonSeleccionado == boton3)
-        //{
-        //    textoJugador.text = "Chiste 3";
-        //    seleccion = 3;
-
-        //}
+     
 
     }
 
@@ -53,37 +32,41 @@ public class ContarChiste : MonoBehaviour
     {
         if (seleccion == 1)
         {
-            textoJugador.text = "Chiste 1";
-            seleccion = 1;
-
+            // textoJugador.text = "Sí, se rompió en la caída.";
+            StartCoroutine(Derrota());
         }
         else if (seleccion == 2)
         {
-            textoJugador.text = "Chiste 2";
-            seleccion = 2;
-
-            print("Texto ganador");
+           // textoJugador.text = "No, solo le faltan un par de tornillos.";
             StartCoroutine(Victoria());
         }
         else if (seleccion == 3)
         {
-            textoJugador.text = "Chiste 3";
-            seleccion = 3;
-
+            // textoJugador.text = "No, solo está tomando un descanso.";
+            StartCoroutine(Derrota());
         }
+
+        boton1.enabled = false;
+        boton2.enabled = false;
+        boton3.enabled = false;
     }
 
     private IEnumerator Victoria()
     {
-        print("Corrutina ganador");
+        
         yield return new WaitForSeconds(3);
-        print("Corrutina ganador22222");
-        textoJugador.text = "Ganaste";
+        SceneManager.LoadScene("Victoria");
+      
     }
 
-
-    void Contador(int seleccion)
+    private IEnumerator Derrota()
     {
+
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Derrota");
         
     }
+
+
+ 
 }

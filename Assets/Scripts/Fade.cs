@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Fade : MonoBehaviour
-{
+{ 
     public Animator animator;
-
-    // Start is called before the first frame update
     void Start()
     {
         Invoke("FadeOut",2);
@@ -17,5 +16,7 @@ public class Fade : MonoBehaviour
     void Update()
     {
         animator.Play("FadeOut");
+          
+
     }
 }

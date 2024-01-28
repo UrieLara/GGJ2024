@@ -19,12 +19,12 @@ public class Dialogos : MonoBehaviour
     void Start()
     {
         chistes.SetActive(false);
-        textoJugador.text = "Dialogo Jugador 1";
+        textoJugador.text = "Disculpame, \n ¿sabes cómo arreglar una nave espacial?";
         textoEnemigo.text = "";
         contador = 1;
     }
+ 
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.A)){
@@ -41,20 +41,23 @@ public class Dialogos : MonoBehaviour
         switch (contador)
         {
             case 1:
-                textoEnemigo.text = "dialogo 1";
+                textoJugador.text = "Colisioné aquí por defecto del sistema.";
                 break;
             case 2:
-                textoJugador.text = "dialogo 2";
+                textoEnemigo.text = "Sí, obvio, por eso traigo mi corbata puesta";
                 break;
             case 3:
-                textoEnemigo.text = "dialogo 3";
+                textoJugador.text = "¡Oh! ¿Es la nueva moda de los mecánicos?";
                 break;
             case 4:
-                textoJugador.text = "dialogo 4";
+                textoEnemigo.text = "*Se ríe*";
+                break;
+            case 5:
+                textoEnemigo.text = "¿Se te rompió el coche en plenas vacaciones?";
                 break;
         }
 
-        if(contador >= 4)
+        if(contador >= 5)
         {
             ContarChiste();
         }
