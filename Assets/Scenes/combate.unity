@@ -2095,8 +2095,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2653939275532634277, guid: 216c2fd0c8b82a44681dc7e7b7d1d2bc, type: 3}
   m_PrefabInstance: {fileID: 1834905948}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
   m_GameObject: {fileID: 2068892054}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -2257,7 +2255,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcd789df5cb244846aad46e5bc4f984a, type: 3}
->>>>>>> Stashed changes
 --- !u!1 &2094163743
 GameObject:
   m_ObjectHideFlags: 0
