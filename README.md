@@ -7,7 +7,7 @@
 🚀Eres un científico, que por accidente de su nave espacial, cayó en esta tierra exótica. 
 <br />Al interactuar con los residentes locales, preocupándote por la salud anímica de estos, descubrís que haciéndolos reír a su propia manera obtenés ayuda para volver a tu planeta.
 
-<br />¡Es tu misión hacer reír a los habitantes de este planta y obtener ayuda para volver a tu hogar!
+¡Es tu misión hacer reír a los habitantes de este planta y obtener ayuda para volver a tu hogar!
 
-_Global Game Jam 2024_
+<br />_Global Game Jam 2024_
 <br />[GGJ Página Web](https://globalgamejam.org/games/2024/punster-9)
