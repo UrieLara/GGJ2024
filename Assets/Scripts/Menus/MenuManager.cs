@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
 
     public void ToggleMainMenu(bool show)
     {
-        menuMainCanvas.enabled = show;
+            menuMainCanvas.enabled = show;
     }
 
     public void ToggleCreditsMenu(bool show)
