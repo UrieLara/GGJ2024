@@ -5,19 +5,22 @@ using Unity.VisualScripting;
 using UnityEngine;
 //using UnityEngine.SceneManagement;
 
-public class Villager : MonoBehaviour
+public class Villager : MoveEntity
 {
     Vector3 targetPosition;
     Vector3 towardsTarget;
     float wanderRadius = 4f;
 
-    public float movementSpeed = 1f;
-    public float rotationSpeed = 0.15f;
+    public float speed = 1f;
+    //public float rotationSpeed = 0.15f;
 
+    Rigidbody rb;
     GameObject player;
-
+    
+ 
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
 
         RecalcularTargetPosition();
@@ -26,14 +29,7 @@ public class Villager : MonoBehaviour
     private void Update()
     {
         towardsTarget = targetPosition - transform.position;
-        MoveTowards(towardsTarget.normalized);
-
-        if (towardsTarget.magnitude < 0.5f)
-        {
-            RecalcularTargetPosition();
-        }
-
-        transform.LookAt(targetPosition);
+        MoveVillager();
 
     }
 
@@ -43,15 +39,23 @@ public class Villager : MonoBehaviour
         targetPosition.y = 0;
     }
 
-    protected void MoveTowards(Vector3 direction)
+    void MoveVillager()
     {
-        Quaternion targetRotation = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed);
-        transform.position += direction.normalized * movementSpeed * Time.deltaTime;
+
+        RotateCharacter(towardsTarget);
+        transform.position += towardsTarget.normalized * speed * Time.deltaTime;
+
+        if (towardsTarget.magnitude < 0.5f)
+        {
+            RecalcularTargetPosition();
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        // FALTA CORREGIR - NO SE DETECTA LA COLISION
         Debug.Log("si");
         if (collision.collider.CompareTag("Player")){
             Debug.Log("colision");
